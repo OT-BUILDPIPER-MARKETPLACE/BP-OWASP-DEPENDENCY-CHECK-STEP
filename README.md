@@ -9,3 +9,9 @@ git submodule init
 git submodule update
 docker build -t ot/owasp_dependency_check:0.1 .
 ```
+
+
+## References
+* [Documentation](https://jeremylong.github.io/DependencyCheck/)
+* [Docker image](https://hub.docker.com/r/owasp/dependency-check)
+* [CLI Arguments](https://jeremylong.github.io/DependencyCheck/dependency-check-cli/arguments.html)
