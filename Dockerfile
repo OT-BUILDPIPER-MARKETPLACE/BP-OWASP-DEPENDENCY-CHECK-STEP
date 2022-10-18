@@ -1,6 +1,6 @@
 FROM owasp/dependency-check
 
-RUN apk add --no-cache --upgrade bash
+#RUN apk add --no-cache --upgrade bash
 RUN apk add jq
 
 COPY BP-BASE-SHELL-STEPS/functions.sh .
