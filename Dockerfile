@@ -1,8 +1,10 @@
 FROM owasp/dependency-check
 
-#RUN apk add --no-cache --upgrade bash
+USER root
+RUN apk add --no-cache --upgrade bash
 RUN apk add jq
 
+USER ${UID}
 COPY BP-BASE-SHELL-STEPS/functions.sh .
 
 ENV DC_ARGS "-Dproject.settings=sonar.properties"
