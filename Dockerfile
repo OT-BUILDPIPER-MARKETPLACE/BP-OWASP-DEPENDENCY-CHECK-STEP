@@ -5,6 +5,7 @@ RUN apk add --no-cache --upgrade bash
 RUN apk add jq
 
 USER ${UID}
+WORKDIR /usr/share/dependency-check  
 COPY BP-BASE-SHELL-STEPS/functions.sh .
 
 ENV DC_ARGS "-Dproject.settings=sonar.properties"
