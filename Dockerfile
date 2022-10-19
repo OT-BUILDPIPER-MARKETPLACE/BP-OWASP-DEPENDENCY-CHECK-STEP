@@ -8,7 +8,8 @@ USER ${UID}
 WORKDIR /usr/share/dependency-check  
 COPY BP-BASE-SHELL-STEPS/functions.sh .
 
-ENV DC_ARGS "-Dproject.settings=sonar.properties"
+ENV OWASP_REPORT_FORMAT "ALL"
+ENV OWASP_REPORT "report"
 
 ENV ACTIVITY_SUB_TASK_CODE OWASP-DC-TASK
 ENV SLEEP_DURATION 5s
